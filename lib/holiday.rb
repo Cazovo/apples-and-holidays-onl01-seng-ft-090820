@@ -23,13 +23,13 @@ def second_supply_for_fourth_of_july(holiday_hash)
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
-    
+    holiday_hash[:winter].each {|k, v| holiday_hash[:winter][k] << supply }
     end  
 end
 
 
 def add_supply_to_memorial_day(holiday_hash, supply)
-    holiday_hash[:sping][:memorial_day] << supply
+   
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
